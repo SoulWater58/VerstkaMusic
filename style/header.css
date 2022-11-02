@@ -50,4 +50,9 @@
 
 .header_favorit-btn {
     line-height: 0;
+    transition: .2s;
+}
+
+.header_favorit-btn:hover {
+    transform: rotateY(0) scale(1.3);
 }
