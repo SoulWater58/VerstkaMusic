@@ -1,0 +1,75 @@
+.track {
+    padding: 6px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.track_active {
+    border-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition-property: background-color;
+}
+
+.track_active:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.track_img-wrap {
+    position: relative;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.track_img-wrap::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    background-image: url('../image/svg/play_arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.track_info {
+    background-color: #FFFFFF;
+    border-radius: 0 0 12px 12px;
+    padding: 14px 8px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.track_active .track_img-wrap::after {
+    transform: translate(-50%, -50%) rotateY(0);
+    background-image: url('../image/svg/pause.svg');
+    transition-property: background-color;
+    opacity: 1;
+}
+
+.track_active:hover .track_img-wrap::after {
+    background-color: #fff;
+}
+
+.track:hover .track_img-wrap::after,
+.track:focus .track_img-wrap::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateY(0);
+}
+
+.track:active .track_img-wrap::after {
+    transform: translate(-50%, -50%) rotateY(70deg) scale(1.3);
+    opacity: 1;
+}
