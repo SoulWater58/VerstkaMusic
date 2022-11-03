@@ -37,7 +37,7 @@
             <h2 class="visually-hidden">Список треков</h2>
             <div class="catalog_container">
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo1.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track track_active">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo2.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -57,7 +57,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo3.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -67,7 +67,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo4.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -77,7 +77,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo5.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -87,7 +87,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo6.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -97,7 +97,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo7.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -107,7 +107,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo8.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -117,7 +117,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo9.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -127,7 +127,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo10.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -137,7 +137,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo11.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -147,7 +147,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_item track">
+                <button class="catalog_item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track_img-wrap">
                         <img src="image/photo12.jpg" alt="The Weeknd - Save Your Tears" class="track_poster" width="180" height="180">
                     </div>
@@ -157,7 +157,7 @@
                     </div>
                 </button>
 
-                <button class="catalog_btn-add">
+                <button class="catalog_btn-add" data-track="audio/Imagine Dragons - Natural.mp3">
                     <span>Увидеть все</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"/>
@@ -166,19 +166,19 @@
             </div>
         </section>
 
-        <section class="player player_active">
+        <section class="player">
             <h2 class="visually-hidden">Плеер</h2>
             <div class="player_container">
-                <div class="player_info track-info">
+                <div class="player_info track-info track-info_mobile-center">
                     <p class="track_title">Frozen</p>
                     <p class="track_artist">Madonna</p>
                 </div>
                 <div class="player_controller">
-                    <button class="player_icon player_icon_stop"></button>
-                    <button class="player_icon player_icon_prev"></button>
-                    <button class="player_icon player_icon_pause"></button>
-                    <button class="player_icon player_icon_next"></button>
-                    <button class="player_icon player_icon_like"></button>
+                    <button class="player_icon player_icon_stop player_controller-stop"></button>
+                    <button class="player_icon player_icon_prev player_controller-prev"></button>
+                    <button class="player_icon player_icon_pause player_controller-pause"></button>
+                    <button class="player_icon player_icon_next player_controller-next"></button>
+                    <button class="player_icon player_icon_like player_controller-like"></button>
                 </div>
                 <div class="player_progress-wrap">
                     <div class="player_progress">
@@ -199,5 +199,6 @@
                 </div>
             </div>
         </section>
+        <script src="script/app.js"></script>
     </body>
 </html>
