@@ -63,6 +63,10 @@
     background-image: url(../image/svg/like_o.svg);
 }
 
+.player_icon_like_active {
+    filter: drop-shadow(0 0 2px tomato);
+}
+
 .player_icon_stop:hover,
 .player_icon_prev:hover,
 .player_icon_pause:hover,

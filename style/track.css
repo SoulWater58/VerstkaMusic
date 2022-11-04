@@ -59,6 +59,10 @@
     opacity: 1;
 }
 
+.track_pause .track_img-wrap::after {
+    background-image: url('../image/svg/play_arrow.svg');
+}
+
 .track_active:hover .track_img-wrap::after {
     background-color: #fff;
 }
